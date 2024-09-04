@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <div class="toolbar-content">
-      <img class="logo" src="assets/classcab-icon.svg" alt="Logo">
+      <img #logo class="logo" src="assets/classcab-icon.svg" alt="Logo">
       <ion-title>ClassCab</ion-title>
     </div>
   </ion-toolbar>
@@ -18,8 +18,7 @@
         <img class="login-image" src="assets/foto-perfil.svg" alt="Profile Image">
       </div>
       <ion-item>
-        <ion-input labelPlacement="stacked" label="Email" placeholder="usuario@correo.com">
-        </ion-input>
+        <ion-input labelPlacement="stacked" label="Email" placeholder="usuario@correo.com"></ion-input>
       </ion-item>
 
       <ion-item style="--background: transparent !important;">
@@ -36,7 +35,6 @@
         </ion-input>
       </ion-item>
       
-
       <ion-item lines="none">
         <ion-label>Recuérdame</ion-label>
         <ion-toggle slot="end"></ion-toggle>
