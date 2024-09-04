@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar-content">
+      <img #logo class="logo" src="assets/classcab-icon.svg" alt="Logo">
+      <ion-title>ClassCab</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-background">
+  <ion-card color="light">
+    <ion-card-header>
+      <ion-card-title class="titulo">Ingresa a tu cuenta</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <div class="image-container">
+        <img class="login-image" src="assets/foto-perfil.svg" alt="Profile Image">
+      </div>
+      <ion-item>
+        <ion-input labelPlacement="stacked" label="Email" placeholder="usuario@correo.com"></ion-input>
+      </ion-item>
+
+      <ion-item style="--background: transparent !important;">
+        <ion-input 
+          labelPlacement="stacked" 
+          label="Contraseña" 
+          placeholder="asdf1234"
+          [type]="showPassword ? 'text' : 'password'" 
+          id="password-input">
+          <ion-icon slot="start" name="lock-closed" aria-hidden="true"></ion-icon>
+          <ion-button fill="clear" slot="end" aria-label="Show/hide" (click)="togglePassword()">
+            <ion-icon slot="icon-only" [name]="passwordToggleIcon" aria-hidden="true"></ion-icon>
+          </ion-button>
+        </ion-input>
+      </ion-item>
+      
+      <ion-item lines="none">
+        <ion-label>Recuérdame</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+
+      <ion-button expand="block" shape="round" class="btn-conectar">Conectar</ion-button>
+      <ion-button expand="block" fill="outline" shape="round" class="btn-registrar">Registrar</ion-button>
+      <div class="ion-text-center">
+        <ion-button fill="clear" class="btn-recuperar">¿Olvidaste tu contraseña?</ion-button>
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>
