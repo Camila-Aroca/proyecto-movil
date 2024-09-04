@@ -64,12 +64,23 @@ ion-button {
 }
 
 .custom-background {
-  --ion-background-color: #333333; /* Dark grey color */
+  --ion-background-color: #000000; /* Dark grey color */
 }
 
 .titulo {
   font-size: 30px;
   font-weight: bold;
+  text-align: left;
 }
+
+/* access.page.scss */
+.logo {
+  position: absolute; /* Adjust if needed */
+  top: 0px; /* Adjust as needed */
+  left: 10px; /* Adjust as needed */
+  width: 50px; /* Adjust size if necessary */
+  height: 50px; /* Maintain aspect ratio */
+}
+
 
 
