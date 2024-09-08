@@ -1,0 +1,133 @@
+ion-content {
+    --ion-background-color: #ffffff; /* Light background */
+  }
+  
+  ion-input {
+    input {
+      background: none !important;
+    }
+  }
+  
+  ion-item {
+    --background: transparent !important;
+  }
+  
+  ion-card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    --ion-background-color: #ffffff;
+  }
+  
+  ion-button {
+    text-transform: none;
+  }
+  
+  .login-image {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: auto;
+  }
+  
+  .label {
+    display: block;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: auto;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  .password-input {
+    text-align: center;
+    margin: 0 auto 20px;
+    width: 150px;
+    height: auto;
+    padding-bottom: 10px;
+    background-color: transparent;
+  }
+  
+  .titulo {
+    text-align: center;
+    margin: 0 auto 20px;
+    font-weight: bold;
+  }
+  
+  ion-button {
+    margin-top: 15px;
+    align-items: center;
+  }
+  
+  ion-radio {
+    --border-radius: 4px;
+    --inner-border-radius: 4px;
+    --color: #ddd;
+    --color-checked: #070707;
+  }
+  
+  ion-radio.ios::part(container) {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .radio-checked.ios::part(container) {
+    border-color: #1c1c1c;
+  }
+  
+  .ion-radio-label {
+    margin-left: 5px;
+  }
+  
+  .rd-group {
+    margin-right: 50px !important; /* Ensure that all the radio group is aligned with "Género" */
+    padding-left: 0 !important; /* Ensure no padding inside the group */
+  }
+  
+  .ion-radio-label {
+    margin-left: 5px;
+  }
+  
+  ion-item {
+    --inner-padding-end: 0;
+    --inner-padding-start: 0;
+  }
+  
+  .rd-grid {
+    margin-left: 0; /* Ensure "Masculino" is aligned with "Género" */
+  }
+  
+  .custom-background {
+    --ion-background-color: #2e2e2e; /* Dark grey color */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+  }
+  
+  .titulo-btn {
+    --background: transparent; /* Remove default background */
+    --border: none; /* Remove border */
+    --color: #000; /* Set text color to black */
+    --padding: 0; /* Remove padding */
+    --margin: 0; /* Remove margin */
+    --height: auto; /* Allow height to adjust based on content */
+    --min-height: auto; /* Remove minimum height */
+    text-align: center; /* Center text */
+    font-weight: bold; /* Make title bold */
+    align-content: center;
+  }
+  
+  .toolbar-content {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between; /* Distribute space between items */
+    width: 100%; /* Full width of the toolbar */
+  }
+  

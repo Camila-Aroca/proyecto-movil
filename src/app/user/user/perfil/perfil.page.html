@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar-content">
+      <img #logo class="logo" src="assets/classcab-icon.svg" alt="Logo" (click)="onLogoClick()">
+        <ion-title>
+          <ion-button class="titulo-btn" fill="clear" (click)="navigateToAccess()">
+            ClassCab
+          </ion-button>
+        </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-background">
+  <div class="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="titulo">Bienvenido, nombre</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item>
+            <ion-input label="Nombre"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input label="Correo" placeholder="nombre@gmail.com"></ion-input>
+          </ion-item>
+        
+          <ion-item>
+            <ion-input label="Dirección" value="Av. El Bosque #888"></ion-input>
+          </ion-item>
+
+          <ion-item>
+            <ion-label style="text-align: start;">Comuna</ion-label>
+            <ion-select class="select-comuna" value="optComuna" interface="popover" placeholder="Seleccione">
+              <ion-select-option value="Providencia">Providencia</ion-select-option>
+              <ion-select-option value="Maipú">Maipú</ion-select-option>
+              <ion-select-option value="Santiago Centro">Santiago Centro</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+            <ion-label style="text-align: start;">Región</ion-label>
+            <ion-select class="select-region" value="optRegion" interface="popover" placeholder="Seleccione">
+              <ion-select-option value="Valparaíso">Valparaíso</ion-select-option>
+              <ion-select-option value="Región Metropolitana">Región Metropolitana</ion-select-option>
+              <ion-select-option value="Rancagua">Rancagua</ion-select-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item class="genero">
+            <ion-label style="margin-bottom: 0;">Género</ion-label>
+            <ion-radio-group class="rd-group">
+              <ion-item lines="none">
+                <ion-radio value="masculino"></ion-radio>
+                <ion-label style="font-size: small;" class="ion-radio-label">Masculino</ion-label>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-radio value="femenino"></ion-radio>
+                <ion-label style="font-size: small;" class="ion-radio-label">Femenino</ion-label>
+              </ion-item>
+            </ion-radio-group>
+          </ion-item>
+
+          <ion-item>
+            <ion-label style="text-align: start;">Fecha Nacimiento</ion-label>
+            <ion-datetime-button datetime="datetime"></ion-datetime-button>
+
+            <ion-modal [keepContentsMounted]="true">
+              <ng-template>
+                <ion-datetime id="datetime" presentation="date"></ion-datetime>
+              </ng-template>
+            </ion-modal>
+          </ion-item>
+        </ion-list>
+
+        <ion-button expand="block" shape="round" class="btn-guardar-perfil" (click)="navigateToAccess()">Guardar perfil</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

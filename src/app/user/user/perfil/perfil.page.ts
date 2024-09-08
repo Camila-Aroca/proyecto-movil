@@ -6,11 +6,11 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-access',
-  templateUrl: './access.page.html',
-  styleUrls: ['./access.page.scss'],
+  selector: 'app-perfil',
+  templateUrl: './perfil.page.html',
+  styleUrls: ['./perfil.page.scss'],
 })
-export class AccessPage implements OnInit, AfterViewInit {
+export class PerfilPage implements OnInit, AfterViewInit {
   showPassword = false;
   passwordToggleIcon = 'eye-off';
   private animation?: Animation;
@@ -49,12 +49,13 @@ export class AccessPage implements OnInit, AfterViewInit {
     this.passwordToggleIcon = this.showPassword ? 'eye' : 'eye-off';
   }
 
-  navigateToPerfil(): void {
+  navigateToAccess(): void {
     // Navigate to perfil page
-    this.router.navigate(['/perfil']);
+    this.router.navigate(['/access']);
   }
 
   navigateToRegistro(): void {
     this.router.navigate(['/registro']);
   }
+
 }

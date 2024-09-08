@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <div class="toolbar-content">
+      <img #logo class="logo" src="assets/classcab-icon.svg" alt="Logo" (click)="onLogoClick()">
+      <ion-title (click)="navigateToAccess()">ClassCab</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="custom-background">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="titulo">Recupera tu contraseña</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <img class="btn-recupera-clave" src="assets/forgot-password.png" alt="Forgot password">
+        <ion-input label="Outline input" class="correo-input" label-placement="floating" fill="outline" placeholder="Enter text"></ion-input>
+        <ion-button class="btn-recupera-clave" expand="block" shape="round" (click)="navigateToAccess()">Recuperar</ion-button>
+      </ion-card-content>
+    </ion-card>
+  <ion-title class="ingresa-correo">Ingresa tu correo electrónico</ion-title>
+</ion-content>

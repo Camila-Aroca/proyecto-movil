@@ -1,7 +1,8 @@
 <ion-header>
   <ion-toolbar>
     <div class="toolbar-content">
-      <img #logo class="logo" src="assets/classcab-icon.svg" alt="Logo">
+      <!-- Add (click)="onLogoClick()" to trigger the animation when the logo is clicked -->
+      <img #logo class="logo" src="assets/classcab-icon.svg" alt="Logo" (click)="onLogoClick()">
       <ion-title>ClassCab</ion-title>
     </div>
   </ion-toolbar>
@@ -17,10 +18,13 @@
       <div class="image-container">
         <img class="login-image" src="assets/foto-perfil.svg" alt="Profile Image">
       </div>
+
+      <!-- Email input -->
       <ion-item>
         <ion-input labelPlacement="stacked" label="Email" placeholder="usuario@correo.com"></ion-input>
       </ion-item>
 
+      <!-- Password input -->
       <ion-item style="--background: transparent !important;">
         <ion-input 
           labelPlacement="stacked" 
@@ -34,16 +38,16 @@
           </ion-button>
         </ion-input>
       </ion-item>
-      
+
       <ion-item lines="none">
         <ion-label>Recuérdame</ion-label>
         <ion-toggle slot="end"></ion-toggle>
       </ion-item>
 
-      <ion-button expand="block" shape="round" class="btn-conectar">Conectar</ion-button>
+      <ion-button expand="block" shape="round" class="btn-conectar" (click)="navigateToPerfil()">Conectar</ion-button>
       <ion-button expand="block" fill="outline" shape="round" class="btn-registrar">Registrar</ion-button>
       <div class="ion-text-center">
-        <ion-button fill="clear" class="btn-recuperar">¿Olvidaste tu contraseña?</ion-button>
+        <ion-button fill="clear" class="btn-recuperar" (click)="navigateToRegistro()">¿Olvidaste tu contraseña?</ion-button>
       </div>
 
     </ion-card-content>

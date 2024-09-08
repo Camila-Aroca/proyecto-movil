@@ -47,6 +47,15 @@
     --color: #FFB800;
   }
 
+  .btn-guardar-perfil {
+    --background: #FFB800;
+    --color: black;
+  }
+
+  .btn-recupera-clave {
+    --background: #FFB800 important!;
+    --color: black;
+  }
 .btn-recuperar {
     --color: black;
     text-decoration: underline;
@@ -55,7 +64,7 @@
   }
 
   .custom-background {
-    --ion-background-color: #333333; /* Dark grey color */
+    --ion-background-color: #000000; /* Dark grey color */
   }
 
   .logo {
@@ -77,6 +86,14 @@
     --background-color: transparent !important;
     background: transparent !important;
   }
+
+  ion-card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    --ion-background-color: #ffffff;
+  }
+
 
 
 

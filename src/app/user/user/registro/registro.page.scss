@@ -1,0 +1,88 @@
+ion-content {
+    --ion-background-color: #ffffff; /* Light background */
+}
+
+ion-input input {
+    background: none !important;
+}
+
+ion-item {
+    --background: transparent !important;
+    --inner-padding-end: 0;
+    --inner-padding-start: 0;
+}
+
+ion-card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    --ion-background-color: #ffffff;
+}
+
+ion-button {
+    text-transform: none;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.titulo {
+    font-weight: bold;
+    text-align: center;
+}
+
+.custom-background {
+    --ion-background-color: #2e2e2e; /* Dark grey color */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.titulo-btn {
+    --background: transparent;
+    --border: none;
+    --color: #000;
+    --padding: 0;
+    --margin: 0;
+    --height: auto;
+    --min-height: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.toolbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-recupera-clave {
+    --background: #FFB800 !important;
+    --color: black !important;
+}
+
+.correo-input {
+    align-items: center;
+    --background: #d2d1d1;
+    border-radius: 25%;
+    --padding-start: 10px; /* Adjust padding as needed */
+    --padding-end: 10px; /* Adjust padding as needed */
+    --border-radius: 5px;
+    border-width: 5px;
+    border-color: #000000;
+}
+
+.ion-text-center {
+    --ionic-text-align: center;
+    font-size: large;
+    color: #000;
+}
+
+.ingresa-correo {
+    font-size: 17px;
+}
