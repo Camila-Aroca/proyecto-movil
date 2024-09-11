@@ -4,16 +4,16 @@ import { eye, eyeOff, lockClosed } from 'ionicons/icons';
 import { Animation, AnimationController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
-
 @Component({
   selector: 'app-perfil',
   templateUrl: './perfil.page.html',
   styleUrls: ['./perfil.page.scss'],
 })
 export class PerfilPage implements OnInit, AfterViewInit {
-  showPassword = false;
-  passwordToggleIcon = 'eye-off';
-  private animation?: Animation;
+  private animation?: Animation; // Declare the 'animation' property
+  showPassword = false; // Properly initialize showPassword
+  passwordToggleIcon = 'eye-off'; // Initialize with a default value
+  username = '';
 
   @ViewChild('logo', { static: false }) logo!: ElementRef;
 
@@ -26,7 +26,15 @@ export class PerfilPage implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    // Initialization logic if needed
+    const navigation = this.router.getCurrentNavigation();
+    const state = navigation?.extras.state as {
+      username: string;
+      password: string;
+    };
+
+    if (state) {
+      this.username = state.username;
+    }
   }
 
   ngAfterViewInit() {
@@ -45,17 +53,18 @@ export class PerfilPage implements OnInit, AfterViewInit {
   }
 
   togglePassword(): void {
+    // Toggle the visibility of the password
     this.showPassword = !this.showPassword;
     this.passwordToggleIcon = this.showPassword ? 'eye' : 'eye-off';
   }
 
   navigateToAccess(): void {
-    // Navigate to perfil page
+    // Navigate to access page
     this.router.navigate(['/access']);
   }
 
   navigateToRegistro(): void {
+    // Navigate to registro page
     this.router.navigate(['/registro']);
   }
-
 }

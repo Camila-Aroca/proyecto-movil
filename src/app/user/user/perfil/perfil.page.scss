@@ -84,6 +84,9 @@ ion-content {
   .rd-group {
     margin-right: 50px !important; /* Ensure that all the radio group is aligned with "Género" */
     padding-left: 0 !important; /* Ensure no padding inside the group */
+    ion-radio {
+      border-radius: 50%;
+    }
   }
   
   .ion-radio-label {
